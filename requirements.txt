@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+openpyxl
+python-dotenv
+openai
+holidays
+xgboost
+catboost
+plotly
