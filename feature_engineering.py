@@ -77,7 +77,7 @@ def engineer_features(df):
     df = df.drop(columns=drop_cols, errors='ignore')
     monthly_sales = (
         df.groupby([
-            pd.Grouper(key='order_date', freq='M'),
+            pd.Grouper(key='order_date', freq='ME'),
             'state',
             'category',
             'sub_category'
@@ -92,7 +92,7 @@ def engineer_features(df):
     )
     order_counts = (
         df.groupby([
-            pd.Grouper(key='order_date', freq='M'),
+            pd.Grouper(key='order_date', freq='ME'),
             'state',
             'sub_category'
         ])
