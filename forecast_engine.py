@@ -14,7 +14,7 @@ def create_future_calendar(
     future_dates = pd.date_range(
         start=start_date,
         periods=forecast_months,
-        freq="M"
+        freq="ME"
     )
 
     future_df = pd.DataFrame({
